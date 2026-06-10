@@ -47,6 +47,11 @@ public class homePage extends JFrame{
      element3.setBorder(new RoundedBorder(4, Color.decode("#979797"), 1));
      element3.setFocusPainted(false);
      OnClickEventHelper.setOnClickColor(element3, Color.decode("#232323"), Color.decode("#2e2e2e"));
+     element3.addActionListener(e -> {
+      new signupPage();
+      dispose();
+    });
+     
      panel.add(element3);
 
      add(panel);
